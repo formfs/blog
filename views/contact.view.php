@@ -7,7 +7,7 @@
 
 <?php empty($result) && redirect('/404'); ?>
 
- <h3>Tous les messages de la page  :</h3>
+ <h3>Tous les messages de la page contact  :</h3>
 
 <?php foreach ($result as $contact): ?>
     <article>

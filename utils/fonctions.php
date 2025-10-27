@@ -37,3 +37,14 @@ function redirect($path) {
     header("Location: $path");
     exit();
 }
+
+function insertContact($nomParam, $titreParam, $messageParam) {
+   global $db;
+   $stm = $db->prepare("INSERT INTO contact (nom,titre,message) VALUES (?, ? ,?)");
+   $stm->execute([$nomParam,$titreParam,$messageParam]);
+
+   $db =null;
+   $stm= null;
+
+}
+

@@ -1,9 +1,7 @@
 <?php
-require __DIR__. "/utils/fonctions.php";
+require __DIR__ . "/utils/fonctions.php";
 $config = require 'config.php';
 $routes = $config['route'];
-
-// dd($routes);
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
